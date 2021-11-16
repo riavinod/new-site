@@ -1,0 +1,11 @@
+# A .YAML file is used to export DNS records to a
+# domain managed by Google Cloud. The format is
+# exclusive to Google Cloud DNS.
+
+---
+kind: dns#resourceRecordSet
+name: 'www.riavinod.com.'
+rrdatas:
+- 'riavinod.github.io.'
+ttl: 3600
+type: CNAME
