@@ -8,7 +8,7 @@ desc: >
   Google search results) and in your feed.xml site description.
 
 url: http://riavinod.github.io      # put your website hosting url here
-baseurl: /my_site                 # the subpath of your site, e.g. /blog
+baseurl: /               # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
 # Meta settings
