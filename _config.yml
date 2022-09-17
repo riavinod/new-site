@@ -5,13 +5,27 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title: Daniel Filan
-email: df@danielfilan.com
+# # Site settings
+# title: Daniel Filan
+# email: df@danielfilan.com
+# description: > # this means to ignore newlines until "baseurl:"
+#   Website of Daniel Filan.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://danielfilan.com/" # the base hostname & protocol for your site
+
+title: Ria Vinod
+email: ria_vinod@brown.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Website of Daniel Filan.
+  Website of Ria Vinod.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://danielfilan.com/" # the base hostname & protocol for your site
+url: "http://riavinod.com/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+gems:
+  - jemoji
+kramdown:
+  extensions: ["footnotes"]
 
 # Build settings
 markdown: kramdown
