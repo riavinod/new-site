@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Kelly bettors"
+title:  "Useful reads (research)"
 date:   2016-11-18
 ---
 
