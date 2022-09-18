@@ -4,6 +4,7 @@ title:  "Things to think about"
 date:   2022-03-10
 ---
 
+Links
 - [Introducing Robert Noyce and Silicon Valley](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/wolfes-tinkering-of-robert-noyce.html)
 - [On happiness, meaning, PhD, and a bit of metaphysics](http://folinoid.com/w/phd_and_meaning.html)
 - [Thread: Differentiable Self-organizing Systems](https://distill.pub/2020/selforg/)
