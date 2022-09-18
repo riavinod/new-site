@@ -1,0 +1,198 @@
+\documentclass[mm,line]{res}
+%\usepackage[bottom=-5cm]{geometry}
+\usepackage{comment}
+\usepackage{nopageno}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cprotect}
+\usepackage{hyperref}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+%\setlength{\topmargin}{-0.5in}
+\usepackage[top=0.5in, bottom=2cm, left=0.5in, right=2in]{geometry}
+
+\setlength{\footskip}{-2in}
+
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Ria Vinod \vspace*{.1in}}
+
+\begin{resume}
+
+\section{\sc Contact}
+\small ria\_vinod@brown.edu \\
+\small \verb+https://www.riavinod.com+
+%\href{https://www.riavinod.com}{\bf riavinod.com}
+
+
+\section{\sc Education}
+
+{\bf Brown University} \\
+\vspace*{0.01in}
+Ph.D. in Computational Biology \hfill \textbf{ 2021 - Present}
+
+\vspace*{0.01in}
+
+{\bf University of California, Berkeley} \\
+\vspace*{0.01in}
+B.S. in Electrical Engineering and Computer Science \hfill \textbf{2017 - 2021}
+
+\vspace*{-0.1in}
+
+\section{\sc Research Experience}
+
+{\bf Crawford Group @ Brown}, Providence, RI
+
+\vspace{-.4cm}
+{\em Graduate Student Researcher} \hfill {\bf 2021 - Present}\\
+Working with Dr. Lorin Crawford and Dr. Kevin Yang on multimodal distribution optimization of protein structures via diffusion-based generative modelling methods.
+
+{\bf AI Science Department, IBM Research}, Yorktown Heights, NY
+
+\vspace{-.4cm}
+{\em Graduate Student Collaborator} \hfill {\bf 2020 - Present}\\
+Continued collaboration with Dr. Payel Das and Dr. Pin-Yu Chen on developing a data-efficient representation learning method by reprogramming large language models for biomedically relevant downstream structure and function protein prediction tasks.
+
+
+{\bf Berkeley Artificial Intelligence Research Lab}, Berkeley, CA
+
+\vspace{-.4cm}
+{\em Undergraduate Student Researcher} \hfill {\bf 2019 - 2020}\\
+Investigated the of effect of reward density on curiosity-based agents and compared to the exploration by children using the DeepMind Lab. Trained agents to achieve a unified theory between exploration in algorithms and humans. Published at ICML workshop 2020.
+
+{\bf Berkeley Institute of Data Science}, Berkeley, CA
+
+\vspace{-.4cm}
+{\em Undergraduate Student Researcher} \hfill {\bf 2018 - 2019}\\
+Designed and implemented CNN-based models for optimal k-space MRI reconstruction using MRI imaging data. Trained models to learn the optimal predetermined trajectory to reconstruct the image from only the few most important lines. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\sc Professional Experience}
+
+{\bf IBM Research AI}, Yorktown Heights, NY
+
+\vspace{-.4cm}
+{\em AI Research Intern} \hfill {\bf 2020}\\
+Worked with Dr. Pin-Yu Chen and Dr. Payel Das on adversarially reprogramming transformers as a data efficient alternative to pretraining for property prediction of protein sequence data (toxicity, AMP, broad/narrow, structure). Published at 2 NeurIPS 2020 workshops.
+
+{\bf SiMa Technologies}, San Jose, CA
+
+\vspace{-.4cm}
+{\em Machine Learning Intern} \hfill {\bf 2020}\\
+Developed APIs to optimize various machine learning models on different hardware architectures measuring performance KPIs. Used TensorRT to achieve upto 9x speedup and reduced power usage upon deployment. Worked on standard GPUs and system-on-chips.
+\hfill \cprotect{\href{https://github.com/riavinod/sima-mlab}}{\verb|[code]|}
+
+
+
+{\bf Salesforce}, San Francisco, CA
+
+\vspace{-.4cm}
+{\em Software Engineering Intern} \hfill {\bf 2019}\\
+Trained and benchmarked ARIMA forecasting models for capacity planning based on feature selection. Developed multidimensional bin packing algorithms for optimized hardware resource utilization. Contributed to the internal Splunk Client API. 
+
+
+{\bf UnitedHealth Group, Advanced Technology Collaborative}, Eden Prairie, MN
+
+\vspace{-.4cm}
+{\em Software Engineering Intern} \hfill {\bf 2018}\\
+Designed and implemented the backend of a NLP Transcription Normalization microservice, using NLTK and SpaCy libraries. Trained Bi-LSTM models for sentence segmentation and true casing of speech data. \newline
+
+\section{\sc Talks}
+
+IBM Research Selected Intern Talks 2020
+
+
+\section{\sc Papers}
+
+{\bf Ria Vinod}, Pin-Yu Chen, Payel Das, \emph{Reprogramming Language Models for Molecular Representation Learning}, Learning Meaningful Representations of Life Workshop, NeurIPS 2020. \hfill \cprotect{\href{https://arxiv.org/pdf/2012.03460.pdf}}{\verb|[PDF]|}\cprotect{\href{https://github.com/riavinod/r2dl/tree/main/r2dl}}{\verb|[code]|}
+
+{\bf Ria Vinod}, Pin-Yu Chen, Payel Das, \emph{Adversarially Reprogramming Large Language Models for Property Prediction}, Women in Machine Learning Workshop, NeurIPS 2020. \hfill \cprotect{\href{https://drive.google.com/file/d/16RhVpT9IPQrkE8JyoVNF-c-Y0MtVev1r/view}}{\verb|[Poster]|}
+
+
+{\bf Ria Vinod}, Pin-Yu Chen, Payel Das, \emph{Low-Resource Representation Learning Methods for Molecular Property Prediction}, Representation Learning in Biology Workshop, ISMB 2021.
+
+
+\section{\sc Preprints}
+
+{\bf Ria Vinod}, Pin-Yu Chen, Payel Das, \emph{Reprogramming a Large-scale Deep English Language Model for Protein Sequence Representation Learning}, Under Review.
+
+
+\section{\sc Teaching}
+
+{\bf Guided Resource Education Program @ UC Berkeley}
+
+\vspace{-.4cm} 
+{\em Founder, Course Instructor} \hfill {2019 - 2021} \\
+Created material for and taught workshops on intro to ML and ethics of AI, covering topics like basic computer vision, bias in AI, data privacy, artificially generated data.
+
+
+{\bf Computer Science Mentors} \\
+{\em Course Instructor} \hfill {2018 - 2019} 
+
+\vspace{-.4cm} 
+Created material, debugged assignments and led small group discussions on concepts taught in CS 61B, UC Berkeley's Data Structures \& Algorithms course.
+
+\section{\sc Activities}
+
+{\bf Machine Learning @ Berkeley}
+
+\vspace{-.4cm}
+{\em VP, External Relations} \hfill {2019 - 2021}\\
+Lead sponsorship and project sourcing (\$100K+) efforts for Berkeley's 60+ student machine learning community. Organized weekly reading groups with leading researchers in industry and academia; organized a 600+ UC Berkeley career fair for ML and Data Science positions. 
+
+
+{\em Co-Organizer, ML4ProteinEngineering Seminar Series} \hfill {2022 - Present}
+
+\vspace{-.4cm} 
+{Organizing bi-weekly speaker series (100+ attendees) for recent advances in machine learning for protein engineering. Expanding the initiative to include meet-ups, workshops and newsletters.}
+
+
+{\em Co-Organizer, Science on the Hill} \hfill { 2022 - Present}
+
+\vspace{-.4cm}
+{Organizing bi-weekly after school science outreach workshops for local Providence, RI public schools (K-8) with sections on introductory biology, programming and computational science.}
+
+{\em Volunteer, Women in Machine Learning (WiML)}
+
+\vspace{-.4cm}
+{Organizing workshops co-located at NeurIPS, ICML; poster mentor} \hfill {2020 - Present}
+
+
+
+\section{\sc Skills}
+
+PyTorch, Tensorflow, JAX, Linux/Unix, bash scripting, AWS
+
+\section{\sc Coursework}
+
+\emph{Brown University:} Inference in Genomics, Modern Learning Theory, Deep Learning in Genomics, Bayesian Statistical methods, Scientific Communication
+
+\emph{UC Berkeley:} Optimization Models, Probability, Algorithms for Computational Biology, Sketching Algorithms for Big Data, Social Implications of Computing
+
+
+\vspace*{-0.15in}
+
+\end{resume}
+
+\end{document}
