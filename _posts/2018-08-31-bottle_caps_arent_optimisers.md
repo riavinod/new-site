@@ -10,14 +10,16 @@ date: 2018-08-31
 3. **Tertiary:**The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.
 4. **Quaternary:** Some proteins are made up of multiple polypeptide chains.
 
+![](http://riavinod.com/pngs/structure.png)
+
+
 **On chains**: A protein can have multiple polypeptide chains. Each chain has its own set of amino acids, assembled in a particular order (a primary sequence).
 
 Protein-design can refer to a design-problem at any of these 4 levels. 
 
 #### Ways to Represent a Protein Backbone (adapted/excerpted from this [post](https://dauparas.github.io/post/af2/)):
 
-A protein backbone is a repeating sequence (linear chain) of 3 atoms: nitrogen, carbon, and another carbon, namely $ \underbrace{N^{(1)}, C_{\alpha}^{(1)}, C^{(1)}}, \underbrace{N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}},…,\underbrace{N^{(L)}, C_{\alpha}^{(L)}, C^{(L)}} $. for the protein of length 
-L. The middle carbon has a special name. It is called “C alpha” because that is where the side chain is connected to. The first three atoms belong to the first amino acid (first residue), the next three to the next amino acid (next residue) etc.
+A protein backbone is a repeating sequence (linear chain) of 3 atoms: nitrogen, carbon, and another carbon, namely $$ \underbrace{N^{(1)}, C_{\alpha}^{(1)}, C^{(1)}}, \underbrace{N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}},…,\underbrace{N^{(L)}, C_{\alpha}^{(L)}, C^{(L)}} $$. for the protein of length L. The middle carbon has a special name. It is called “C alpha” because that is where the side chain is connected to. The first three atoms belong to the first amino acid (first residue), the next three to the next amino acid (next residue) etc.
 
 Predicting backbone configurations in 3D space may seem to be straightforward, but is in fact challenging because atoms that are far in the sequence space (primary protein structure) can be close in 3D space and they can interact. This suggests that non-local modelling is needed to accurately predict tertiary structure. At the same time, protein backbones have a clearly defined local structure (bond lengths and angles are fixed). Choosing to focus on local and/or non-local interactions leads to different backbone representations. In the following, we will describe four common ways of representing the protein backbone.
 
