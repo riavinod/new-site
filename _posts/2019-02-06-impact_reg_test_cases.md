@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Some recent reads"
-date: 2020-02-06
+date: 2019-02-06
 ---
 
 - The God of Small Things, Arundhati Roy

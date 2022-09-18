@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Resources I found useful as a new graduate student"
-date: 2021-11-10
+date: 2018-07-10
 ---
 
 ML/Proteins
