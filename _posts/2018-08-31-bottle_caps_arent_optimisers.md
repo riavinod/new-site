@@ -62,7 +62,15 @@ where $i = 1, 2, 3…, L$. Notice that $\phi^{(1)}$ and $\psi^{(L)}, \omega^{(L)
 
 #### 4. Relative Distances and Angles between Residues
 
-Another way to represent backbone atoms without a frame of reference is to use the pairwise distance and angle representations. One choice could be to represent relative distances between $C_{\alpha}$ coordinates and relative orientations (e.g. Euler angles) between red triangles. Denote the Euclidean distance between $C_{\alpha}^{(i)}$ and $C_{\alpha}^{(j)}$ as the distance matrix $D_{\alpha}^{(ij)}$: $D^{(ij)}_{\alpha}=\sqrt{(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\cdot(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})}=\left\lVert(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\right\rVert_2$.
+Another way to represent backbone atoms without a frame of reference is to use the pairwise distance and angle representations. One choice could be to represent relative distances between $C_{\alpha}$ coordinates and relative orientations (e.g. Euler angles) between red triangles. Denote the Euclidean distance between $C_{\alpha}^{(i)}$ and $C_{\alpha}^{(j)}$ as the distance matrix $D_{\alpha}^{(ij)}$ 
+
+<!-- : $D^{(ij)}_{\alpha}=\sqrt{(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\cdot(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})}=\left\lVert(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\right\rVert_2$. -->
+
+$$
+\begin{align}
+D^{(ij)}_{\alpha}=\sqrt{(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\cdot(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})}=\left\lVert(X_{\alpha}^{(i)}-X_{\alpha}^{(j)})\right\rVert_2
+\end{align}
+$$
 
 The $(D^{(ij)}_{\alpha})^2$ matrix has some special properties. If we write out the dot product we get 
 
