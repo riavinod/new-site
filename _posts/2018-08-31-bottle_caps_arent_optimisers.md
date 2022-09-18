@@ -10,11 +10,7 @@ date: 2018-08-31
 3. **Tertiary:** The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.
 4. **Quaternary:** Some proteins are made up of multiple polypeptide chains.
 
-![structure](./images/structure.png)
-
-$\alpha$
-$\mathbb{\alpha}$
-\alpha\
+![structure](https://github.com/riavinod/riavinod.github.io/blob/master/_posts/images/structure.png)
 
 **On chains**: A protein can have multiple polypeptide chains. Each chain has its own set of amino acids, assembled in a particular order (a primary sequence).
 
