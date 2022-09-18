@@ -7,8 +7,8 @@ date: 2018-08-31
 [There are 4 levels of protein structure:](https://www.khanacademy.org/science/biology/macromolecules/proteins-and-amino-acids/a/orders-of-protein-structure)
 1. **Primary:** sequence of amino acids (also called residues)
 2. **Secondary:** refers to local folded structures that form within a polypeptide due to interactions between atoms of the backbone. (The backbone just refers to the polypeptide chain apart from the R groups – so all we mean here is that secondary structure does not involve R group atoms.)
-3. **The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.**
-4. **Quaternanry:** Some proteins are made up of multiple polypeptide chains, also known as subunits.
+3. **Tertiary:**The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.
+4. **Quaternary:** Some proteins are made up of multiple polypeptide chains.
 
 On chains: A protein can have multiple polypeptide chains. Each chain has its own set of amino acids, assembled in a particular order (a primary sequence).
 
@@ -44,7 +44,7 @@ A torsion (dihedral) angle is the angle between two intersecting planes, in this
 
 Demonstrated in the picture above, each torsion angle has a specific name in protein literature. They are defined as 
 $
-\begin{align}
+\begin{align} \\
 \phi^{(i)}&=\text{Torsion}(C^{(i-1)}, N^{(i)}, C_{\alpha}^{(i)}, C^{(i)}),\\ 
 \psi^{(i)}&=\text{Torsion}(N^{(i)}, C_{\alpha}^{(i)}, C^{(i)}, N^{(i+1)}),\\ 
 \omega^{(i)}&=\text{Torsion}(C_{\alpha}^{(i)}, C^{(i)}, N^{(i+1)}, C_{\alpha}^{(i+1)}),
