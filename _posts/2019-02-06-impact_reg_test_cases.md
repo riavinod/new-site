@@ -4,6 +4,7 @@ title: "Some recent reads"
 date: 2020-02-06
 ---
 
+Books
 - The God of Small Things, Arundhati Roy
 - The Emperor of All Maladies, Siddhartha Mukherjee
 - The Ministry of Utmost Happiness, Arundhati Roy
