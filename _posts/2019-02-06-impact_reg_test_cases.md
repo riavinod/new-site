@@ -4,7 +4,7 @@ title: "Some recent reads"
 date: 2020-02-06
 ---
 
-Books
+<!-- Books
 - The God of Small Things, Arundhati Roy
 - The Emperor of All Maladies, Siddhartha Mukherjee
 - The Ministry of Utmost Happiness, Arundhati Roy
@@ -16,4 +16,4 @@ Books
 - How the World Really Works, Vaclav Smil
 - The Inheritance of Loss, Kiran Desai
 - Why We’re Polarized, by Ezra Klein
-- Czeslaw Milosz: A California Life
+- Czeslaw Milosz: A California Life -->
