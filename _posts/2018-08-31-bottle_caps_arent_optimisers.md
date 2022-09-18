@@ -12,7 +12,7 @@ date: 2018-08-31
 
 <!-- ![structure](https://github.com/riavinod/riavinod.github.io/blob/master/_posts/images/structure.png) -->
 <img src="/structure.jpg"/>
-1
+
 
 **On chains**: A protein can have multiple polypeptide chains. Each chain has its own set of amino acids, assembled in a particular order (a primary sequence).
 
@@ -37,13 +37,15 @@ This representation is based on the premise that distances and angles between $C
 
 Since bond lengths and angles between neighbouring backbone atoms are fixed, the only remaining degrees of freedom are the torsion (dihedral) angles. 
 
-![Torsion Angles](./images/torsion-angles-1.png)
+<!-- ![Torsion Angles](./images/torsion-angles-1.png) -->
+<img src="/torsion-angles-1.jpg"/>
 
 A torsion (dihedral) angle is the angle between two intersecting planes, in this case it is the angle between the green and the red planes. Mathematically we define the function called 
 **Torsion** which takes in 4 points in a chain $C^{(1)}, N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}$ and outputs the angle between the planes created by $C^{(1)}, N^{(2)}, C_{\alpha}^{(2)}$ and $N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}$ as a value between $-\pi$ and $\pi$. We write this as $\phi^{(2)}=\text{Torsion}(C^{(1)}, N^{(2)}, C_{\alpha}^{(2)}, C^{(2)})\in [-\pi, \pi]$.
 
 
-![Torsion Angles](./images/torsion-angles-2.png)
+<!-- ![Torsion Angles](./images/torsion-angles-2.png) -->
+<img src="/torsion-angles-2.jpg"/>
 
 Demonstrated in the picture above, each torsion angle has a specific name in protein literature. They are defined as 
 
