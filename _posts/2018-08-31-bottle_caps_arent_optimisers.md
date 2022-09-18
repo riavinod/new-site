@@ -19,7 +19,7 @@ Protein-design can refer to a design-problem at any of these 4 levels.
 
 #### Ways to Represent a Protein Backbone (adapted/excerpted from this [post](https://dauparas.github.io/post/af2/)):
 
-A protein backbone is a repeating sequence (linear chain) of 3 atoms: nitrogen, carbon, and another carbon, namely $$ \mathbb{\underbrace{N^{(1)}, C_{\alpha}^{(1)}, C^{(1)}}, \underbrace{N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}},…,\underbrace{N^{(L)}, C_{\alpha}^{(L)}, C^{(L)}}} $$. for the protein of length L. The middle carbon has a special name. It is called “C alpha” because that is where the side chain is connected to. The first three atoms belong to the first amino acid (first residue), the next three to the next amino acid (next residue) etc.
+A protein backbone is a repeating sequence (linear chain) of 3 atoms: nitrogen, carbon, and another carbon, namely $$\mathbb{\underbrace{N^{(1)}, C_{\alpha}^{(1)}, C^{(1)}}, \underbrace{N^{(2)}, C_{\alpha}^{(2)}, C^{(2)}},…,\underbrace{N^{(L)}, C_{\alpha}^{(L)}, C^{(L)}}}$$. for the protein of length L. The middle carbon has a special name. It is called “C alpha” because that is where the side chain is connected to. The first three atoms belong to the first amino acid (first residue), the next three to the next amino acid (next residue) etc.
 
 Predicting backbone configurations in 3D space may seem to be straightforward, but is in fact challenging because atoms that are far in the sequence space (primary protein structure) can be close in 3D space and they can interact. This suggests that non-local modelling is needed to accurately predict tertiary structure. At the same time, protein backbones have a clearly defined local structure (bond lengths and angles are fixed). Choosing to focus on local and/or non-local interactions leads to different backbone representations. In the following, we will describe four common ways of representing the protein backbone.
 
@@ -62,17 +62,12 @@ Another way to represent backbone atoms without a frame of reference is to use t
 
 The $$(D^{(ij)}_{\alpha})^2$$ matrix has some special properties. If we write out the dot product we get 
 
-$$
-(D^{(ij)}_{\alpha})^2=&(X_{\alpha}^{(i)}\cdot X_{\alpha}^{(i)}+X_{\alpha}^{(j)}X_{\alpha}^{(j)}-2X_{\alpha}^{(i)}X_{\alpha}^{(j)}),\\ 
-(D^{(ij)}_{\alpha})^2=&(G_{\alpha}^{(ii)}+G_{\alpha}^{(jj)}-2G_{\alpha}^{(ij)}),\\ 
-G_{\alpha}^{(ij)} :=& X_{\alpha}^{(i)}X_{\alpha}^{(j)}
-$$
 
-<!-- $$\begin{align}
+$$\begin{align}
 (D^{(ij)}_{\alpha})^2=&(X_{\alpha}^{(i)}\cdot X_{\alpha}^{(i)}+X_{\alpha}^{(j)}X_{\alpha}^{(j)}-2X_{\alpha}^{(i)}X_{\alpha}^{(j)}),\\ 
 (D^{(ij)}_{\alpha})^2=&(G_{\alpha}^{(ii)}+G_{\alpha}^{(jj)}-2G_{\alpha}^{(ij)}),\\ 
 G_{\alpha}^{(ij)} :=& X_{\alpha}^{(i)}X_{\alpha}^{(j)},
-\end{align}$$ -->
+\end{align}$$
 
 Where $$G_{\alpha}^{(ij)}$$ is known as a Gram matrix. The Gram matrix has rank 3 because it is a product of two 3-dimensional vectors $$X_{\alpha}^{(i)}$$ and $$X_{\alpha}^{(j)}$$. and therefore the square of the distance matrix has rank ≤ 1 + 1 + 3 = 5. There are requirements for the geometrically centred distance matrix to be positive semi-definite (meaning all eigenvalues are greater or equal to zero). Read more about Euclidean Distance Matrices here. It is a global representation of the structure. If one has a distance matrix, there is a simple algorithm to obtain coordinates that satisfy those distances. It is called Multidimensional scaling (MDS); see the [original post](https://dauparas.github.io/post/af2/) for more details.
 
