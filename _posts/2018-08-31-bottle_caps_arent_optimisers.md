@@ -57,6 +57,7 @@ $$
 \end{align}
 $$
 
+
 where $i = 1, 2, 3…, L$. Notice that $\phi^{(1)}$ and $\psi^{(L)}, \omega^{(L)}$ are not defined because there are no $C^{(0)}$ and $N^{(L+1)}$. Therefore a protein backbone can be represented as a sequence of torsion angles: $\psi^{(1)}, \omega^{(1)}, \phi^{(2)}, \psi^{(2)}, \omega^{(2)},…,\phi^{(L)}$. This representation is independent of the frame of reference and it does not have any local bond length/angle constraints, but it suffers from the lever arm effect meaning that small errors propagate along the backbone. Interestingly, AlphaFold 1 predicted torsion angles to initialise the gradient descent algorithm to optimize the relative distance potentials to obtain the protein structure.
 
 
