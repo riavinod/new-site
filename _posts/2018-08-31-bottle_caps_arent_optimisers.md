@@ -7,7 +7,7 @@ date: 2018-08-31
 [There are 4 levels of protein structure:](https://www.khanacademy.org/science/biology/macromolecules/proteins-and-amino-acids/a/orders-of-protein-structure)
 1. **Primary:** sequence of amino acids (also called residues)
 2. **Secondary:** refers to local folded structures that form within a polypeptide due to interactions between atoms of the backbone. (The backbone just refers to the polypeptide chain apart from the R groups – so all we mean here is that secondary structure does not involve R group atoms.)
-3. **Tertiary:**The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.
+3. **Tertiary:** The overall three-dimensional structure of a polypeptide is called its tertiary structure. The tertiary structure is primarily due to interactions between the R groups of the amino acids that make up the protein.
 4. **Quaternary:** Some proteins are made up of multiple polypeptide chains.
 
 ![structure](./images/structure.png)
