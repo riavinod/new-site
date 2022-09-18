@@ -12,6 +12,9 @@ date: 2018-08-31
 
 ![structure](./images/structure.png)
 
+$\alpha$
+$\mathbb{\alpha}$
+\alpha\
 
 **On chains**: A protein can have multiple polypeptide chains. Each chain has its own set of amino acids, assembled in a particular order (a primary sequence).
 
@@ -28,7 +31,7 @@ Predicting backbone configurations in 3D space may seem to be straightforward, b
 
 Protein backbone atoms can be described using XYZ coordinates. The first residue is composed of $N^{(1)}, C_{\alpha}^{(1)}$ and $C^{(1)}$ each of which has an X, Y, and Z coordinate. This results in a 3 by 3 matrix that represents the entire residue. When you stack these together for the whole backbone of length $L$ you generate a tensor $X$: $X\in \mathbb{R}^{3\times 3 \times L}$. Remember that some distances and angles between backbone atoms (within and between residues) are fixed, so these coordinates will have to satisfy those constraints to result in a valid protein structure. 
 
-#### 2. XYZ Coordinates of $$C_\alpha$$ + Orientation
+#### 2. XYZ Coordinates of $C_\alpha$ + Orientation
 
 This representation is based on the premise that distances and angles between $C_{\alpha}^{(i)}$ and $N^{i}$ and $C^{i}$ are fixed. Therefore it is enough to represent the XYZ coordinates of $C_{\alpha}^{(i)}$ and the orientation of these atoms relative to $C_{\alpha}^{(i)}$. There will still be constraints on the distance and angle between adjacent residues that need to be satisfied for the local geometry to be feasible, but otherwise this representation automatically preserves intrinsic residue geometry. AlphaFold 2 used this representation in their structure module.
 
@@ -45,12 +48,13 @@ A torsion (dihedral) angle is the angle between two intersecting planes, in this
 ![Torsion Angles](./images/torsion-angles-2.png)
 
 Demonstrated in the picture above, each torsion angle has a specific name in protein literature. They are defined as 
+
 $$
-\begin{align} \\
+% \begin{align} \\
 \phi^{(i)}&=\text{Torsion}(C^{(i-1)}, N^{(i)}, C_{\alpha}^{(i)}, C^{(i)}),\\ 
 \psi^{(i)}&=\text{Torsion}(N^{(i)}, C_{\alpha}^{(i)}, C^{(i)}, N^{(i+1)}),\\ 
 \omega^{(i)}&=\text{Torsion}(C_{\alpha}^{(i)}, C^{(i)}, N^{(i+1)}, C_{\alpha}^{(i+1)}),
-\end{align}
+% \end{align}
 $$
 
 where $i = 1, 2, 3…, L$. Notice that $\phi^{(1)}$ and $\psi^{(L)}, \omega^{(L)}$ are not defined because there are no $C^{(0)}$ and $N^{(L+1)}$. Therefore a protein backbone can be represented as a sequence of torsion angles: $\psi^{(1)}, \omega^{(1)}, \phi^{(2)}, \psi^{(2)}, \omega^{(2)},…,\phi^{(L)}$. This representation is independent of the frame of reference and it does not have any local bond length/angle constraints, but it suffers from the lever arm effect meaning that small errors propagate along the backbone. Interestingly, AlphaFold 1 predicted torsion angles to initialise the gradient descent algorithm to optimize the relative distance potentials to obtain the protein structure.
@@ -63,11 +67,13 @@ Another way to represent backbone atoms without a frame of reference is to use t
 The $(D^{(ij)}_{\alpha})^2$ matrix has some special properties. If we write out the dot product we get 
 
 
-$$\begin{align}
+$$
+% \begin{align}
 (D^{(ij)}_{\alpha})^2=&(X_{\alpha}^{(i)}\cdot X_{\alpha}^{(i)}+X_{\alpha}^{(j)}X_{\alpha}^{(j)}-2X_{\alpha}^{(i)}X_{\alpha}^{(j)}),\\ 
 (D^{(ij)}_{\alpha})^2=&(G_{\alpha}^{(ii)}+G_{\alpha}^{(jj)}-2G_{\alpha}^{(ij)}),\\ 
 G_{\alpha}^{(ij)} :=& X_{\alpha}^{(i)}X_{\alpha}^{(j)},
-\end{align}$$
+% \end{align}
+$$
 
 Where $G_{\alpha}^{(ij)}$ is known as a Gram matrix. The Gram matrix has rank 3 because it is a product of two 3-dimensional vectors $X_{\alpha}^{(i)}$ and $X_{\alpha}^{(j)}$. and therefore the square of the distance matrix has rank ≤ 1 + 1 + 3 = 5. There are requirements for the geometrically centred distance matrix to be positive semi-definite (meaning all eigenvalues are greater or equal to zero). Read more about Euclidean Distance Matrices here. It is a global representation of the structure. If one has a distance matrix, there is a simple algorithm to obtain coordinates that satisfy those distances. It is called Multidimensional scaling (MDS); see the [original post](https://dauparas.github.io/post/af2/) for more details.
 
