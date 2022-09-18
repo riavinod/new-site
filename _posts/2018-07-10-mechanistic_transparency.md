@@ -12,3 +12,4 @@ ML/Proteins
 General
 - [ML Collective](https://mlcollective.org)
 - [Women in Machine Learning](https://wimlworkshop.org)
+- [Writing a Research Statement](https://www.alexluresearch.com/resources/research_statements/)
