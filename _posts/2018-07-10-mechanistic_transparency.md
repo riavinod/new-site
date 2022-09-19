@@ -13,3 +13,4 @@ General
 - [ML Collective](https://mlcollective.org)
 - [Women in Machine Learning](https://wimlworkshop.org)
 - [Writing a Research Statement](https://www.alexluresearch.com/resources/research_statements/)
+- [ML Mentors Spreadsheet](https://docs.google.com/spreadsheets/d/1OR7xEIvJICLbQ9FA2eKNwaWFSu1bCIU-28fcf7Z45_E/edit#gid=0)
