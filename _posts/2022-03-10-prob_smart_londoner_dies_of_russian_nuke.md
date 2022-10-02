@@ -6,6 +6,7 @@ date:   2022-03-10
 
 Links
 - [Open-endedness: The last grand challenge you’ve never heard of](https://www.oreilly.com/radar/open-endedness-the-last-grand-challenge-youve-never-heard-of/)
+- [Key ingredient in coronavirus tests comes from Yellowstone's lakes](https://www.nationalgeographic.com/science/article/key-ingredient-in-coronavirus-tests-comes-from-yellowstone)
 - [Introducing Robert Noyce and Silicon Valley](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/wolfes-tinkering-of-robert-noyce.html)
 - [Large Language Models as a Cultural Technology](https://www.youtube.com/watch?v=k7rPtFLH6yw)
 - [On happiness, meaning, PhD, and a bit of metaphysics](http://folinoid.com/w/phd_and_meaning.html)
