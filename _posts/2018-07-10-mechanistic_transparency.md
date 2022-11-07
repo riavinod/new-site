@@ -8,6 +8,7 @@ ML/Proteins
 - [Broad Institute Models, Inference & Algorithms (MIA) Seminar Series](https://www.broadinstitute.org/talks/fall-2022/mia)
 - [ML Protein Engineering Seminar Series](https://www.ml4proteinengineering.com)
 - [Boston Protein Design & Modelling Club](https://www.bpdmc.org)
+- [A list of lists for bio applications](https://github.com/biolists)
 
 General
 - [ML Collective](https://mlcollective.org)
